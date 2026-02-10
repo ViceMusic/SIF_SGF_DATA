@@ -48,47 +48,47 @@
 
 ### **4.每一种表征类型的数据结构**
 
-.
-├── 📂csv/                          # Processed annotations (CSV format)
-│   ├── Train_sif_{repr}.csv
-│   ├── Test_sif_{repr}.csv
-│   ├── Train_sgf_{repr}.csv
-│   └── Test_sgf_{repr}.csv
-│
-├── 📂features/                     # Extracted molecular representations
-│   ├── Train_sif_{repr}.npz
-│   ├── Test_sif_{repr}.npz
-│   ├── Train_sgf_{repr}.npz
-│   └── Test_sgf_{repr}.npz
-│
-├── 📂npy_data/                     # Final NumPy datasets for modeling
-│   ├── 📂SIF/
-│   │   ├── 📂Train/
-│   │   │   ├── x_train_sif.npy              # Feature matrix (model input)
-│   │   │   ├── y_train_sif.npy              # Continuous labels (minutes)
-│   │   │   ├── y_train_sif_label.npy        # Binarized labels
-│   │   │   └── train_sif_source_name.npy    # Data source identifiers
-│   │   └── 📂Test/
-│   │       ├── x_test_sif.npy
-│   │       ├── y_test_sif.npy
-│   │       ├── y_test_sif_label.npy
-│   │       └── test_sif_source_name.npy
-│   │
-│   ├── 📂SGF/
-│   │   ├── 📂Train/
-│   │   │   ├── x_train_sgf.npy
-│   │   │   ├── y_train_sgf.npy
-│   │   │   ├── y_train_sgf_label.npy
-│   │   │   └── train_sgf_source_name.npy
-│   │   └── 📂Test/
-│   │       ├── x_test_sgf.npy
-│   │       ├── y_test_sgf.npy
-│   │       ├── y_test_sgf_label.npy
-│   │       └── test_sgf_source_name.npy
-│   │
-│   ├── feature_names.npy          # Feature names (NumPy format)
-│   └── feature_names.json         # Feature names (JSON format)
-│
-├── 🔢 split.py: 分割数据为npy的脚本【不影响工作流程】
-│
-└── README.md
+    .
+    ├── 📂csv/                          # Processed annotations (CSV format)
+    │   ├── Train_sif_{repr}.csv
+    │   ├── Test_sif_{repr}.csv
+    │   ├── Train_sgf_{repr}.csv
+    │   └── Test_sgf_{repr}.csv
+    │
+    ├── 📂features/                     # Extracted molecular representations
+    │   ├── Train_sif_{repr}.npz
+    │   ├── Test_sif_{repr}.npz
+    │   ├── Train_sgf_{repr}.npz
+    │   └── Test_sgf_{repr}.npz
+    │
+    ├── 📂npy_data/                     # Final NumPy datasets for modeling
+    │   ├── 📂SIF/
+    │   │   ├── 📂Train/
+    │   │   │   ├── x_train_sif.npy              # Feature matrix (model input)
+    │   │   │   ├── y_train_sif.npy              # Continuous labels (minutes)
+    │   │   │   ├── y_train_sif_label.npy        # Binarized labels
+    │   │   │   └── train_sif_source_name.npy    # Data source identifiers
+    │   │   └── 📂Test/
+    │   │       ├── x_test_sif.npy
+    │   │       ├── y_test_sif.npy
+    │   │       ├── y_test_sif_label.npy
+    │   │       └── test_sif_source_name.npy
+    │   │
+    │   ├── 📂SGF/
+    │   │   ├── 📂Train/
+    │   │   │   ├── x_train_sgf.npy
+    │   │   │   ├── y_train_sgf.npy
+    │   │   │   ├── y_train_sgf_label.npy
+    │   │   │   └── train_sgf_source_name.npy
+    │   │   └── 📂Test/
+    │   │       ├── x_test_sgf.npy
+    │   │       ├── y_test_sgf.npy
+    │   │       ├── y_test_sgf_label.npy
+    │   │       └── test_sgf_source_name.npy
+    │   │
+    │   ├── feature_names.npy          # Feature names (NumPy format)
+    │   └── feature_names.json         # Feature names (JSON format)
+    │
+    ├── 🔢 split.py: 分割数据为npy的脚本【不影响工作流程】
+    │
+    └── README.md
