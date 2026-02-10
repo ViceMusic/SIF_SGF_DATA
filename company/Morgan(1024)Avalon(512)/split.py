@@ -4,6 +4,8 @@ import json
 from pathlib import Path
 
 # ================== 手动配置 ==================
+# 此处需要你修改代码，我现在目录下有很多文件夹，每个文件夹都是原本的格式，下面有csv和feature
+# 但是一个一个文件夹进去我有点绷不住了，我现在想要一次性执行所有的，请你修改当前代码满足要求，保持原有逻辑
 CSV_DIR = Path("csv")
 NPZ_DIR = Path("features")
 OUT_DIR = Path("npy_data")
